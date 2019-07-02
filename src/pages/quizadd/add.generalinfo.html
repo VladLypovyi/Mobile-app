@@ -1,0 +1,25 @@
+<!--<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <h1 align="center">Quiz's Information</h1>
+    </ion-title>
+  </ion-navbar>
+</ion-header>-->
+
+<ion-list>
+    <ion-item>
+        <h1 align="center">Quiz's Information</h1>
+    </ion-item>
+    <ion-item>
+        <ion-label color="primary">Name: </ion-label>
+        <ion-input type="text" [(ngModel)]="name" name="name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label color="primary">Subject: </ion-label>
+        <ion-input type="text" [(ngModel)]="subject" name="subject"></ion-input>
+    </ion-item>
+    <ion-item>
+        <button ion-button round (click)="changeStateAtParent()">Add Questions Now</button>
+    </ion-item>
+</ion-list>

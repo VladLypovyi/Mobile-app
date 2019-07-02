@@ -1,0 +1,26 @@
+.correctAnswer, .wrongAnswer{
+  font-weight: bold;
+}
+
+.correctAnswer{ color:green; }
+
+.wrongAnswer{ 
+  color:red;
+  text-decoration: line-through;
+}
+
+.questionTxt{
+  background-color:#0d6791;
+  color:white;
+  text-align: center;
+  padding:15px;
+  border-radius:10px;
+}
+
+.propaganda{
+  text-align: center;
+  background-color:black;
+  color:cyan;
+  padding:10px;
+  border-radius:10px;
+}

@@ -1,0 +1,34 @@
+<ion-item>
+    <ion-label color="primary">Subject: </ion-label>
+    <ion-input type="text" [(ngModel)]="q_a.subject" name="q_a.subject"></ion-input>
+</ion-item>
+<ion-item>
+    <ion-label color="primary">Question (text)</ion-label>
+    <ion-input type="text" [(ngModel)]="q_a.question.txt" name="q_a.question.txt"></ion-input>
+</ion-item>
+<ion-item>
+    <ion-label color="primary">Question (image)</ion-label>
+    <ion-input type="text" [(ngModel)]="q_a.question.img" name="q_a.question.img"></ion-input>
+</ion-item>
+<ion-item>
+    <ion-label color="primary">Number of Proposed Answers</ion-label>
+    <ion-input type="number" [(ngModel)]="numProposedAnswers" name="numProposedAnswers" (ngModelChange)="createPA($event)"></ion-input>
+</ion-item>
+<div *ngIf="numProposedAnswers > 0">
+    <div *ngFor="let oneqa of q_a.propAnswers">
+        <ion-item>
+            <input type="checkbox" [(ngModel)]="oneqa.isCorrect">
+            <label>(Correct Answer)</label>
+        </ion-item>
+        <ion-item>
+            <ion-input type="text" [(ngModel)]="oneqa.txt" name="oneqa.txt" placeholder="Enter Text"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input type="text" [(ngModel)]="oneqa.img" name="oneqa.img" placeholder="Enter Image (URL)"></ion-input>
+        </ion-item>
+    </div>
+</div>
+<ion-item>
+    <button ion-button round (click)="quizDone()">Save Quiz</button>
+    <button ion-button round (click)="setNewQuestion()">More Question</button>
+</ion-item>

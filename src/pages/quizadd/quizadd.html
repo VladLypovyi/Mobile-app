@@ -1,0 +1,19 @@
+<!--<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <h1 align="center">Add New Quiz</h1>
+    </ion-title>
+  </ion-navbar>
+</ion-header>-->
+
+<ion-content padding>
+  <div class="container">
+    <div *ngIf="state == 'general'">
+      <generalinfo (stateChange)=onNofity($event)>general</generalinfo>
+    </div>
+    <div *ngIf="state == 'questionsanswers'">
+      <h1>Questions Answers</h1>
+      <questionanswer>questioninfo</questionanswer>
+    </div>
+  </div>
+</ion-content>

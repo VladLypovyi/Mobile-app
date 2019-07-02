@@ -1,0 +1,24 @@
+<ion-list *ngIf="isDefinedQA()">
+    <ion-item>
+        <h3 align="center" class="questionTxt">Question: {{qa.question.txt}}</h3>
+    </ion-item>
+    <ion-item *ngIf="qa.question.img.length>0">
+        <p align="center">
+            <ion-img width="80" height="80" src="qa.question.img"></ion-img>
+        </p>
+    </ion-item>
+    <div *ngFor="let oneqa of qa.propAnswers; let i = index">
+        <ion-item>
+            <input type="checkbox" [(ngModel)]="oneqa.isSelected">
+            <label *ngIf="true" [innerHTML]="oneqa.txt"></label>
+        </ion-item>
+        <ion-item *ngIf="oneqa.img.length>0">
+            <p align="center">
+                <ion-img width="80" height="80" src="oneqa.img"></ion-img>
+            </p>
+        </ion-item>
+    </div>
+    <ion-item>
+        <button ion-button round (click)="goCheckAnswers()">Check</button>
+    </ion-item>
+</ion-list>

@@ -1,0 +1,15 @@
+<ion-content padding *ngIf="isDefinedQA()">
+  <div *ngIf="!isDone">
+    <br/>
+    <div class="propaganda">
+      <span align="center">{{quizName}}</span><br/>
+      <span align="center">({{quizSubject}})</span>
+    </div>
+    <div *ngIf="isQuestion">
+      <quiz-question-play (stateChange)=goCheckAnswers()></quiz-question-play>
+    </div>
+    <div *ngIf="!isQuestion">
+      <quiz-play-check (stateChange)=getNewQuestion()></quiz-play-check>
+    </div>
+  </div>
+</ion-content>
