@@ -17,6 +17,27 @@ Learn how to build **Mobile App** (**Android**, **iOS**) with **3-tier Architect
 We get the message: "**No 'Access-Control-Allow-Origin' header is present on the requested resource**" when we try to access to our database (**mLab** ). That's a problem of "**cors**" (cross-origin resource sharing). It seems that it could be fixed by adding Chrome's extention [(here)](
 https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi).
 
+## User Interface (iOS, Android and Windows, side-by-side)
+
+### Home page
+![alt text](src/assets/img/quiz_home.jpg)
+
+### Add Question:
+
+![alt text](src/assets/img/quiz_add_1.jpg)
+
+### Add Proposed Answers:
+
+![alt text](src/assets/img/quiz_add_2.jpg)
+
+### Playing: Answer to the Question
+
+![alt text](src/assets/img/quiz_play_1.jpg)
+
+### Playing: Check Answers
+
+![alt text](src/assets/img/quiz_play_2.jpg)
+
 ## Execution
 We don't need to worry about the persistence's process (saving and retrieving data) because this application uses the online database "**mLab**". 
 
