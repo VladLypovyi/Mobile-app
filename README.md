@@ -3,19 +3,6 @@
 ## Aim
 Learn how to build **Mobile App** (**Android**, **iOS**) with **3-tier Architecture**. Each platform  (**Android**, **iOS**) could have specifics options (sensors, for example). 
 
-## Technologies
-**MongoDB** (**mLab** for "online" version or another choice: **firebase**), **Angular 2**. We have:
-
-- [ ] [**Quiz with MongoDB**](https://github.com/DinhLeGaulois/quiz_clientServer_MongoDB): **CSS**, **jQuery**, **Express/NodeJS**, **MongoDB**
-- [ ] [**Quiz with PHP**](https://github.com/DinhLeGaulois/quiz_PHP): **CSS**, **jQuery**, **BootStrap**, **PHP**, **MongoDB**
-- [ ] [**Quiz with M.E.R.N. Stack**](https://github.com/DinhLeGaulois/quiz_clientServer_MongoDB_React): **CSS**, **jQuery**, **Express/NodeJS**, **MongoDB**, **React**
-- [ ] [**Quiz with M.E.A.N. Stack**](https://github.com/DinhLeGaulois/quiz_clientServer_MongoDB_Angular): **CSS**, **jQuery**, **Express/NodeJS**, **MongoDB**, **Angular** (version 2)
-- [x] [**Quiz with Mobile App**](https://github.com/DinhLeGaulois/quiz_MobileApp): **Ionic 2**, **Angular** (version 2)
-
-
-## Problem (solution)
-We get the message: "**No 'Access-Control-Allow-Origin' header is present on the requested resource**" when we try to access to our database (**mLab** ). That's a problem of "**cors**" (cross-origin resource sharing). It seems that it could be fixed by adding Chrome's extention [(here)](
-https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi).
 
 ## User Interface (iOS, Android and Windows, side-by-side)
 
