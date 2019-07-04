@@ -22,35 +22,4 @@ We don't need to worry about the persistence's process (saving and retrieving da
 
 To execute the application, just enter "**ionic serve -l**" then the default web browser of the computer will show up the home page. We could choose the platform  (**Android**, **iOS**) we want to use the application.
 
-## User Interface (iOS, Android and Windows, side-by-side)
 
-### Home page
-![alt text](src/assets/img/quiz_home.jpg)
-
-### Add Question:
-
-![alt text](src/assets/img/quiz_add_1.jpg)
-
-### Add Proposed Answers:
-
-![alt text](src/assets/img/quiz_add_2.jpg)
-
-### Playing: Answer to the Question
-
-![alt text](src/assets/img/quiz_play_1.jpg)
-
-### Playing: Check Answers
-
-![alt text](src/assets/img/quiz_play_2.jpg)
-
----
-
-## Advantages
-We could build new quizzes with our desktop and/or our laptop computer (better than with a smart phone when making copy/paste of text) and save it into the online data base (**mLab**). Everybody (as long as we don't use - but we MUST do it in the real application - authentication and/or authorization) could "play" any built quiz in the database.
-
----------------
-
-## Author
-* Dinh HUYNH - All Rights Reserved!
-* dinh.hu19@yahoo.com
-# quiz
